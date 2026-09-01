@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- PyScript CSS [PyScript CDN] -->
+        <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.2/core.css">
+    <!-- This script tag bootstraps PyScript -->
+        <script type="module" src="https://pyscript.net/releases/2026.7.2/core.js"></script>
+    <title>Working with Numbers</title>
+     <link rel="stylesheet" href="style.css">
+    
+
+
+</head>
+<body>
+    <br><br>
+    <h1>The Magic Calculator</h1>
+    <form>
+        <br><br>
+        <h5>Enter 2 numbers and click which operation you want to apply to them <br> <i style="color:brown;">(Double click the button)</i></h5>
+        <input type="number" id="num1" placeholder="Enter your first number"><br>
+        <input type="number" id="num2" placeholder="Enter your first number"><br><br>
+        <input type="button" py-dblclick="adding_numbers" value="Add">
+            <!-- This is the button that commences the addition of the two inputted numbers-->
+        <input type="button" py-dblclick="subtracting_numbers" value="Subtract">
+            <!-- This is the button that commences the subtraction of the two inputted numbers-->
+        <input type="button" py-dblclick="multiplying_numbers" value="Multiply"><br><br>
+            <!-- This is the button that commences the multiplication of the two inputted numbers-->
+        <input type="button" py-dblclick="dividing_numbers" value="Divide">
+            <!-- This is the button that commences the division of the two inputted numbers-->
+        <input type="button" py-dblclick="dividinground_numbers" value="Divide w/ roundoff"><br><br>
+            <!-- This is the button that commences the division of the two inputted numbers. Afterward, it shows the rounded off value -->
+        <input type="button" py-dblclick="remainder_numbers" value="remainder"><br><br>
+            <!-- This is the button that commences the showcase of the remainder of the two inputted numbers after dividing-->
+
+    <div id="result" style="background-color:rgb(197, 120, 82)"></div>
+    <py-script src="main.py"></py-script>
+        
+    </form>
+
+</body>
+</html>
